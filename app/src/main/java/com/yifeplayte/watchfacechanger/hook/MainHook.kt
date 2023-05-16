@@ -7,6 +7,7 @@ import com.yifeplayte.watchfacechanger.hook.hooks.BaseHook
 import com.yifeplayte.watchfacechanger.hook.hooks.common.ApiHolder
 import com.yifeplayte.watchfacechanger.hook.hooks.common.DebugMode
 import com.yifeplayte.watchfacechanger.hook.hooks.common.HttpRequest
+import com.yifeplayte.watchfacechanger.hook.hooks.common.LocalAccount
 import com.yifeplayte.watchfacechanger.hook.utils.DexKit
 import com.yifeplayte.watchfacechanger.hook.utils.XSharedPreferences.getBoolean
 import de.robv.android.xposed.IXposedHookLoadPackage
@@ -29,6 +30,7 @@ class MainHook : IXposedHookLoadPackage, IXposedHookZygoteInit {
         initHook(ApiHolder, "change_api", true)
         initHook(DebugMode, "debug_mode", true)
         initHook(HttpRequest, "change_api", true)
+        initHook(LocalAccount)
         DexKit.closeDexKit()
     }
 
