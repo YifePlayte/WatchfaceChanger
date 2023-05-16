@@ -1,0 +1,1 @@
+-keep class com.yifeplayte.watchfacechanger.hook.MainHook-keep class com.yifeplayte.watchfacechanger.hook.hooks.**.**-keepattributes RuntimeVisibleAnnotations

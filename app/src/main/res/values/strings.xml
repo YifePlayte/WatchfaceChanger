@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name" translatable="false">WatchFaceChanger</string>
+    <string name="xposed_desc">Change WatchFace Url</string>
+    <string name="warning">Warning</string>
+    <string name="not_support">You seem to be using an outdated version of LSPosed or LSPosed is not active, please update LSPosed or activate it and try again.</string>
+    <string name="done">OK</string>
+    <string name="reboot">Reboot</string>
+    <string name="reboot_tips">Are you sure to reboot?</string>
+    <string name="cancel">Cancel</string>
+    <string name="reboot_system">Reboot system</string>
+    <string name="restart_all_scope">Restart all scope</string>
+    <string name="restart_all_scope_tips">Are you sure to restart all scope?</string>
+    <string name="finished">Finished</string>
+    <string name="health">Mi Health</string>
+    <string name="debug_mode">Mi Fitness debug mode</string>
+    <string name="change_api">Change API</string>
+</resources>
