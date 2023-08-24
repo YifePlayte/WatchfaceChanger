@@ -30,7 +30,9 @@ android {
     }
 
     androidResources {
-        additionalParameters("--allow-reserved-package-id", "--package-id", "0x45")
+        additionalParameters.add("--allow-reserved-package-id")
+        additionalParameters.add("--package-id")
+        additionalParameters.add("0x45")
     }
 
     compileOptions {
@@ -44,8 +46,8 @@ android {
 
 dependencies {
     implementation(project(":blockmiui"))
-    implementation("com.github.kyuubiran:EzXHelper:2.0.0")
+    implementation("com.github.kyuubiran:EzXHelper:2.0.6")
     implementation("androidx.core:core-ktx:1.10.1")
-    implementation("org.luckypray:DexKit:1.1.4")
+    implementation("org.luckypray:DexKit:1.1.8")
     compileOnly("de.robv.android.xposed:api:82")
 }
