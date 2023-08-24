@@ -4,11 +4,9 @@ import com.github.kyuubiran.ezxhelper.EzXHelper
 import com.github.kyuubiran.ezxhelper.HookFactory.`-Static`.createHook
 import com.yifeplayte.watchfacechanger.hook.hooks.BaseHook
 import com.yifeplayte.watchfacechanger.hook.utils.DexKit.dexKitBridge
-import com.yifeplayte.watchfacechanger.hook.utils.DexKit.loadDexKit
 
 object HttpRequest : BaseHook() {
     override fun init() {
-        loadDexKit()
         dexKitBridge.findMethodUsingString {
             usingString = "Only one HTTP method is allowed. Found: %s and %s."
         }.map {

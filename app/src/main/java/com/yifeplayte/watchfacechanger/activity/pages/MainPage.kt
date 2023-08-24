@@ -30,26 +30,6 @@ class MainPage : BasePage() {
             SwitchV("change_api", true)
         )
 
-        TitleText("API")
-        TextSummaryWithArrow(
-            TextSummaryV(
-                "FaceApiService",
-                onClickListener = {
-                    MIUIDialog(activity) {
-                        setTitle("FaceApiService")
-                        setEditText(safeSP.getString("face_api_service_host", "https://miwatch.conversmod.ru/"), "host")
-                        setEditText(safeSP.getString("face_api_service_path", "api/"), "path")
-                        setLButton("Cancel") {
-                            dismiss()
-                        }
-                        setRButton("OK") {
-                            dismiss()
-                        }
-                    }.show()
-                }
-            )
-        )
-
         TitleText(textId = R.string.reboot)
         TextSummaryWithArrow(
             TextSummaryV(
